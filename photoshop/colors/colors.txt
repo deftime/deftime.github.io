@@ -1,0 +1,8 @@
+darkGreen - #185c3b
+white - #ffffff
+lightGrey - #c6d0d2
+blue - #6598e6
+lightBlue - #01d4f3
+yellow - #fdcf0a
+green - #12b367
+darkBrown - #e67624
