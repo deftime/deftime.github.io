@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Форма</title>
+</head>
+<body>
+
+<table width="500" align="center">
+<tr>
+  <td align="center"><h1>Заполните форму</h1></td>
+</tr>
+<tr>
+  <td>
+  <form action="task3.html" method="post">
+    <input type="text" name="name" value="" placeholder="Введите имя">
+    <input type="text" name="surname" value="" placeholder="Введите фамилию" required><br>
+    <hr color="#f2f2f2">
+    <p></p>
+    <label>Введите пароль<br>
+      <input type="password" name="pass" value="" required>
+    </label><br>
+    <p></p>
+    <label>Повторите пароль <br>
+      <input type="password" name="passagain" value="" required>
+    </label><br>
+    <p></p>
+    <hr color="#ccc">
+    <p></p>
+    <label for="count_s">Ваша страна</label><br>
+    <select id="count_s" name="country">
+      <option>Страна1</option>
+      <option>Страна2</option>
+      <option>Страна3</option>
+      <option selected>Страна4</option>
+    </select><br>
+    <p></p>
+    <label for="city_s">Ваш город</label><br>
+    <select id="city_s" name="city" multiple required>
+      <option disabled>Выберите город</option>
+      <option>Киев</option>
+      <option selected>Одесса</option>
+      <option>Львов</option>
+    </select><br>
+    <p></p>
+    <fieldset>
+      <legend>Что вы любите делать</legend>
+      <input type="checkbox" name="sleep" value="check" checked required>Спать <br>
+      <input type="checkbox" name="eat" value="check">Кушать <br>
+      <input type="checkbox" name="run" value="check">Бегать <br>
+      <input type="checkbox" name="learn" value="check">Учится <br>
+      <input type="checkbox" name="paint" value="check">Рисовать <br>
+      <input type="checkbox" name="drink" value="check">Употреблять много алкоголя <br>
+    </fieldset>
+    <fieldset>
+      <legend>Вам есть 18?</legend>
+      <input type="radio" name="18" value="no">Нет <br>
+      <input type="radio" name="18" value="yes" required>Да <br>
+    </fieldset>
+    <p></p>
+    <textarea name="about" rows="1" cols="20" placeholder="кратко о себе" maxlength="100" required></textarea><br>
+    <p></p>
+    <input type="submit" name="button" value="Отправить"><button type="reset" name="reset">Очистить</button>
+  </form>
+  </td>
+</tr>
+</table>
+
+</body>
+</html>
