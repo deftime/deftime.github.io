@@ -1,0 +1,33 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.sub {
+  display: none;
+  padding-left: 5px;
+  position: relative;
+  top: -5px;
+}
+
+a:hover+.sub,
+.sub:hover {
+  display: block;
+}
+
+.list li {
+  list-style: none;
+}
+
+.bg {
+  margin-top: 20px;
+  width: 100%;
+  height: 1000px;
+  background-color: #ccc;
+  background-image: url('http://akidsplacedentistry.com/blog/wp-content/uploads/2017/06/d34Cu4L.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
