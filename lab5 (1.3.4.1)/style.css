@@ -1,0 +1,44 @@
+header,
+footer {
+  background-color: #e0ffff;
+  padding: 5px;
+  height: 35px;
+}
+
+.buttons_up button,
+.buttons_down button{
+  color: white;
+  background-color: #4169E1;
+  padding: 10px;
+  font-size: 8px;
+}
+
+.buttons_up {
+  width: 20%;
+  float: right;
+  text-align: right;
+}
+
+.main {
+  border: 1px solid blue;
+  padding: 10px;
+  margin: 10px;
+}
+
+.main p button {
+  color: white;
+  background-color: #8b0000;
+  padding: 3px;
+}
+
+p {
+  background-color: #fffacd;
+  font-size: 12px;
+}
+
+.main button {
+  color: blue;
+  padding: 2px;
+  border-radius: 0;
+  background-color: white;
+}
