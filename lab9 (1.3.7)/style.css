@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main div {
+  display: inline-block;
+  height: 100%;
+  width: 22%;
+  padding: 50px 20px 50px 20px;
+}
+
+.main div:nth-child(even) {
+  background-color: #ccc;
+}
+
+.main div:nth-child(odd) {
+  background-color: #eee;
+}
