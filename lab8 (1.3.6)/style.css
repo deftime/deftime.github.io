@@ -1,0 +1,36 @@
+.top {
+  background-color: #00CED1;
+}
+
+.top button {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: #9400D3;
+  border: none;
+  padding: 15px;
+  margin: 15px 5px 15px 15px;
+}
+
+.bottom {
+  background-color: #FFE4C4;
+  margin-top: 40px;
+  width: 23%;
+}
+
+.bottom button {
+  font-family: serif;
+  font-size: 15px;
+  color: white;
+  background-color: #DEB887;
+  border: 1px solid #A52A2A;
+  padding: 10px 16px 10px 16px;
+  margin: 15px 0 15px 15px;
+  box-sizing: border-box;
+  width: 40%;
+}
+
+.bottom button+button {
+  margin-left: 5%;
+  margin-right: 15px;
+}
