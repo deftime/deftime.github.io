@@ -7,16 +7,28 @@ body {
   padding-top: 0.1px;
 }
 
-body > img {
+/* body > img {
   opacity: 0.2;
   position: absolute;
   width: 100%;
   z-index: -1;
+} */
+
+.bg {
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.2;
 }
 
 .main {
   max-width: 1000px;
-  padding-top: 1px;
+  padding-top: 0.1px;
   background-color: white;
   margin: 10% auto 0 auto;
 }
