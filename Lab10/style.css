@@ -1,0 +1,47 @@
+/* body {
+  display: table;
+} */
+
+.main {
+  width: 300px;  /*(100px)*/
+  height: 300px; /*(100px)*/
+  border: 1px solid black;
+  margin: 150px 0 0 400px;
+  /* display: table-cell;
+  vertical-align: middle; */
+  /* display: grid; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+
+  /* Stupid and simple) */
+  /* padding: 100px; */
+}
+
+.main div {
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+  /* margin: 0 auto; */
+  /* position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; */
+
+  /* ----------------------------------------------------- */
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* margin-left: -50px;
+  margin-top: -50px; */
+
+  /* +button-teg in html */
+  /* display: inline-block;
+  background-color: white; */
+
+
+}
