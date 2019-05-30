@@ -1,0 +1,61 @@
+body {
+  background-image: url('space.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+}
+
+.orbit {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 50px auto;
+  position: relative;
+  animation: round 10s linear infinite;
+}
+
+.sun {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: gold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+}
+
+.mars {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: tomato;
+  margin-top: 140px;
+  animation: big 10s linear infinite;
+}
+
+.sun:hover,
+.mars:hover {
+  transition: .5s;
+  transform: scale(1.2);
+}
+
+.orbit:hover {
+  animation-play-state: paused;
+}
+
+@keyframes round {
+  100% {transform: rotate(360deg);}
+
+}
+
+@keyframes big {
+  0% {transform: scale(.5);}
+  25% {transform: scale(1.5);}
+  50% {transform: scale(1);}
+  100% {transform: scale(.5);}
+}
