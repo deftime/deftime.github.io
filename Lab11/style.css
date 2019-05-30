@@ -9,6 +9,7 @@
   margin: auto;
   /* background-image: url('round.png');
   background-repeat: repeat-x; */
+  /* border-bottom: 76px dotted black; */
 }
 
 .main div {
@@ -17,6 +18,7 @@
   background-color: black;
   border-radius: 50%;
   /* box-shadow: 120px 0 0 0 black, 240px 0 0 0 black, 360px 0 0 0 black; */
+  /* display: none; */
 
 }
 

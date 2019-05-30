@@ -57,30 +57,37 @@ body {
   border-radius: 10px;
 }
 
-.row figure {
-  display: inline-block;
+.row div {
+  /* display: inline-block;
   text-align: center;
-  width: 30%;
+  width: 30%; */
 }
 
-.row figure:hover img {
+.row div:hover img {
   box-shadow: 0 0 20px #ccc;
 }
 
-.row figure:hover figcaption {
+.row div:hover span {
   text-decoration: underline;
 }
 
-.row figure:active img {
+.row div:active img {
   box-shadow: inset 0 0 20px #ccc;
 }
 
-.row figcaption {
+.row span {
+  display: block;
   font-size: 25px;
   margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .row a {
   color: inherit;
   text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+
 }
