@@ -1,0 +1,39 @@
+div {
+  width: 200px;
+  height: 200px;
+  /* background-color: black; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+
+}
+
+div img {
+  width: 100%;
+  opacity: 0.4;
+
+}
+
+img:hover {
+  opacity: 1;
+  transition: 2s linear;
+  transform: rotate(360deg);
+  animation-name: slidein;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+
+
+}
+
+
+@keyframes slidein {
+  0% {background: yellow}
+  20% {background: green}
+  40% {background: red}
+  60% {background: blue}
+  80% {background: grey}
+}
