@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 10px;
+}
+
+header {
+  display: flex;
+  background-color: #6495ED;
+  align-items: center;
+}
+
+header div {
+  color: white;
+  padding: 10px;
+  background-color: #FF6347;
+  margin: 15px 10px 15px 0px;
+}
+
+header div:first-child {
+  margin-left: 15px;
+}
+
+header div:last-child {
+  margin-left: auto;
+}
+
+header div:hover,
+.button:hover {
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.events p {
+  background-color: #F5F5DC;
+  padding: 15px;
+  flex-basis: 100%;
+}
+
+.events > div {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.events div div {
+  background-color: #FFFAF0;
+  border: 1px solid #FAEBD7;
+  padding: 15px 0 0 15px;
+  flex-basis: 235px;
+}
+
+.jobs {
+  color: white;
+
+}
+
+.jobs > div {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.jobs > div > div:first-child {
+  background-color: #A52A2A;
+  flex-basis: 200px;
+  padding: 15px 0 15px 15px;
+  margin-right: 15px;
+}
+
+.jobs > div > div:last-child {
+  background-color: #D2691E;
+  flex-basis: 100%;
+  padding: 15px 0 15px 15px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.button {
+  background-color: #A52A2A;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #8B0000;
+  margin-right: 15px;
+}
