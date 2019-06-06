@@ -1,0 +1,20 @@
+body {
+  background: #e5e5e5;
+}
+
+.outer {
+  width: 50%;
+  margin: 0 auto;
+}
+.outer .inner {
+  border: 1px solid;
+}
+.outer .inner :hover p {
+  color: red;
+}
+.outer p {
+  font-size: 15px;
+  color: grey;
+}
+
+/*# sourceMappingURL=style.css.map */
