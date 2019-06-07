@@ -12,11 +12,11 @@
 
 header {
   border: 1px solid;
+  position: relative;
 }
 
-header img {
+header img[alt=logo] {
   margin: 10px;
-
 }
 
 header button {
@@ -30,6 +30,25 @@ header button {
   background-color: red;
   float: right;
   cursor: pointer;
+}
+
+header nav {
+  display: inline-block;
+  padding: 45px 20px 40px 0;
+  float: right;
+}
+
+header .burger {
+  display: none;
+}
+
+header nav a {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: orange;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 30px;
 }
 
 .content {
@@ -46,13 +65,13 @@ aside {
   position: relative;
 }
 
-aside nav {
+aside div {
   margin: 10px auto;
   position: sticky;
   top: 10px;
 }
 
-aside nav a {
+aside div a {
   display: block;
   color: black;
   text-decoration: none;
@@ -61,7 +80,7 @@ aside nav a {
   margin-bottom: 10px;
 }
 
-aside nav a:hover {
+aside div a:hover {
   text-decoration: underline;
 }
 
@@ -164,6 +183,10 @@ footer img {
 
 /* HOVERS */
 
+.inner {
+  overflow: hidden;
+}
+
 .inner-hide {
   position: absolute;
   top: 0;
@@ -190,17 +213,18 @@ footer img {
 
 .hide1,
 .hide2 {
-  display: none;
+  transform: translatey(100%);
 }
 
 .inner1:hover .hide1 {
-  transition: 0.5s;
-  display: flex;
+  transition: 0.7s ease-out;
+  transform: translateY(0%);
+
 }
 
 .inner2:hover .hide2 {
-  transition: 0.5s;
-  display: flex;
+  transition: 0.7s ease-out;
+  transform: translateY(0%);
 }
 
 .navbutt div:hover {
@@ -218,6 +242,10 @@ footer img {
   cursor: pointer;
 }
 
+header nav a:hover {
+  text-decoration: underline;
+}
+
 /* ADAPTIVE and RESPONSIBLE*/
 
 @media screen and (max-width: 800px) {
@@ -229,15 +257,72 @@ footer img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    position: static;
   }
 
-  aside nav {
+  aside div {
     text-align: center;
+    position: static;
   }
 
-  aside nav a {
+  aside div a {
     display: inline;
     padding-right: 10px;
     font-size: 20px;
   }
+
+  header nav a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  header nav {
+    display: none;
+  }
+
+  header .burger:hover + nav,
+  nav:hover {
+    display: block;
+  }
+
+  header .burger {
+    display: block;
+    width: 50px;
+    height: 60px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .burger img[alt=burger] {
+    width: 100%;
+  }
+
+  header nav {
+    position: absolute;
+    top: 180px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 5px 0;
+    width: 40%;
+    height: 200px;
+    background-color: #e5e5e5;
+    border: 2px solid orange;
+  }
+
+  header nav a {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 0;
+    font-size: 18px;
+  }
+
+
 }
