@@ -1,0 +1,19 @@
+@import "part1";
+@import "part2";
+
+.outer {
+  width: 50%;
+  margin: 0 auto;
+  .inner {
+    border: 1px solid;
+    :hover {
+      p {
+        color: red;
+      }
+    }
+  }
+  p {
+    font-size: 15px;
+    color: grey;
+  }
+}
