@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Event click by CSS</title>
+  <style>
+    .inner {
+      width: 300px;
+      height: 300px;
+      background-color: red;
+      transition: 0.5s;
+      transform: translatex(-110%);
+    }
+    .click {
+      padding: 10px;
+      background-color: #ccc;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    .hidden {
+      display: none;
+    }
+    #hidParent:checked + .parent .inner {
+      transition: 0.5s;
+      transform: translatex(0%);
+    }
+  </style>
+</head>
+<body>
+
+<input id="hidParent" class="hidden" type="checkbox">
+<div class="parent">
+  <div class="inner"></div>
+  <label for="hidParent" class="click">Click</label>
+</div>
+
+</body>
+</html>
