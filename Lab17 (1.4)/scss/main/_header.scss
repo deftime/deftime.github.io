@@ -1,0 +1,40 @@
+@import "../vars/colors";
+
+header {
+  border: 1px solid;
+  position: relative;
+  img[alt=logo] {
+    margin: 10px;
+  }
+  button {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+    margin: 25px 10px 0 0;
+    border: none;
+    border-radius: 10px;
+    background-color: $red;
+    float: right;
+    cursor: pointer;
+  }
+  nav {
+    display: inline-block;
+    padding: 45px 20px 40px 0;
+    float: right;
+    a {
+      font-family: sans-serif;
+      font-size: 18px;
+      color: $orange;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-right: 30px;
+      &:active {
+        color: red;
+      }
+    }
+  }
+  .burger {
+    display: none;
+  }
+}
