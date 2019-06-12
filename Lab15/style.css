@@ -11,19 +11,12 @@ body {
 }
 
 .outer {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> htmlcss
   width: 400px;
   height: 400px;
   padding: 200px;
 }
 
 .inside {
-<<<<<<< HEAD
-=======
-=======
   width: 30vw;
   height: 30vw;
   border: 1px solid;
@@ -32,8 +25,6 @@ body {
 }
 
 /* .inside {
->>>>>>> labs
->>>>>>> htmlcss
   position: relative;
   width: 100%;
 }
@@ -53,12 +44,4 @@ body {
   right: 0;
   overflow: hidden;
   text-overflow: ellipsis;
-<<<<<<< HEAD
-}
-=======
-<<<<<<< HEAD
-}
-=======
 } */
->>>>>>> labs
->>>>>>> htmlcss

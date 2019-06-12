@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Big Laba</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/home.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -11,17 +13,33 @@
 <div class="conteiner">
   <header>
     <a href="#"><img src="./images/logo.png" alt="logo" width="100px"></a>
-    <button>Login</button>
-    <div class="burger">
-      <img src="./images/burger.png" alt="burger">
+    <input type="checkbox" id="click">
+    <div class="dark"></div>
+    <div class="sidemenu">
+      <label for="click" class="cls">Close</label>
+      <nav>
+        <ul>
+          <li><a href="#1">Main</a></li>
+          <li><a href="#2">Blog</a></li>
+          <li><a href="#3">Services</a></li>
+          <li><a href="#4">Photo</a></li>
+          <li><a href="#5">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="in">Sign In</div>
+      <button class="log">Login</button>
+      <div class="bot">
+        <div class="social">
+          <a href="facebook.com" target="_blank"></a>
+          <a href="instagram.com" target="_blank"></a>
+          <a href="twitter.com" target="_blank"></a>
+        </div>
+        <p>Subscribe to our social networks and get newest info about!</p>
+      </div>
     </div>
-    <nav>
-      <a href="#1">Main</a>
-      <a href="#2">Blog</a>
-      <a href="#3">Services</a>
-      <a href="#4">Photo</a>
-      <a href="#5">Contacts</a>
-    </nav>
+    <label for="click" class="burger">
+      <img src="./images/burger.png" alt="burger">
+    </label>
   </header>
   <div class="content">
     <aside>
@@ -33,7 +51,7 @@
       </div>
     </aside>
     <div class="main">
-      <h1>Main Title</h1>
+      <h1>Classic is coming!</h1>
       <div class="video">
         <video controls="" preload="auto" autoplay="" poster="./video/poster.png">
           <source src="./video/video.mp4" type="video/mp4">
