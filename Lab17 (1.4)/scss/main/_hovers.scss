@@ -56,3 +56,8 @@
 header nav a:hover {
   text-decoration: underline;
 }
+
+.log:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
