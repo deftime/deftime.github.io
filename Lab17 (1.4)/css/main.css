@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+/* HEADER */
+header {
+  border: 1px solid;
+}
+header img[alt=logo] {
+  margin: 10px;
+}
+header .log {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px;
+  margin: 25px 10px 0 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #9E0000;
+  cursor: pointer;
+}
+header nav {
+  display: inline-block;
+  padding: 45px 20px 40px 0;
+}
+header nav li {
+  list-style: none;
+  display: inline-block;
+}
+header nav a {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #CC5100;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 30px;
+}
+header nav a:active {
+  color: red;
+}
+header .burger {
+  display: none;
+}
+header .sidemenu {
+  display: inline-block;
+  float: right;
+}
+header .dark {
+  display: none;
+}
+header .cls {
+  display: none;
+}
+header .in {
+  display: none;
+}
+header .bot {
+  display: none;
+}
+header #click {
+  display: none;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+aside {
+  border: 1px solid;
+  width: 28%;
+  height: 1029px;
+  position: relative;
+}
+aside div {
+  margin: 10px auto;
+  position: sticky;
+  top: 10px;
+}
+aside div a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+aside div a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  border: 1px solid;
+  padding: 5px;
+}
+.main h1 {
+  text-align: center;
+  margin: 5px 0 20px 0;
+}
+.main h2 {
+  text-align: center;
+  margin: 5px 0 20px 0;
+}
+.main .video {
+  /* border: 1px solid; */
+  height: 25em;
+  /* background: url('./video/poster.png') no-repeat; */
+}
+.main .video video {
+  width: 100%;
+  height: 100%;
+}
+
+.blocks {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.blocks .inner {
+  position: relative;
+  z-index: 5;
+  width: 300px;
+  height: 400px;
+  margin: 15px 20px;
+  border: 1px solid;
+}
+.blocks .inner img {
+  width: 100%;
+}
+.blocks .inner .b-img {
+  height: 40%;
+  overflow: hidden;
+}
+.blocks .inner h3 {
+  font-size: 25px;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid;
+}
+.blocks .inner p {
+  text-align: justify;
+  font-family: sans-serif;
+  font-style: italic;
+  margin: 5px;
+}
+
+.navbutt {
+  display: flex;
+  justify-content: space-between;
+}
+.navbutt div {
+  width: 200px;
+  padding: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  border: 1px solid black;
+  margin: 5px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.navbutt img {
+  width: 40px;
+  margin: 0 15px;
+}
+
+/* FOOTER */
+footer {
+  border: 1px solid;
+}
+footer img {
+  display: block;
+  width: 100px;
+  margin: 10px auto;
+}
+
+/* HOVERS and ANIMATIONS */
+.inner {
+  overflow: hidden;
+}
+.inner .inner-hide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 398px;
+  background-color: rgba(229, 229, 229, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner .inner-hide img[alt=infopic] {
+  display: block;
+  width: 100px;
+}
+.inner .inner-hide img:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.hide1,
+.hide2 {
+  transform: translatey(100%);
+}
+
+.inner1:hover .hide1 {
+  transition: 0.7s ease-out;
+  transform: translateY(0%);
+}
+
+.inner2:hover .hide2 {
+  transition: 0.7s ease-out;
+  transform: translateY(0%);
+}
+
+.navbutt div:hover {
+  transition: 0.5s;
+  background-color: #e5e5e5;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px;
+  cursor: pointer;
+}
+
+.navbutt div:active {
+  background-color: #e5e5e5;
+  transform: scale(1);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.log:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+/* ADAPTIVE and RESPONSIBLE */
+@media screen and (max-width: 1023px) {
+  header .burger {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 30px 20px;
+    float: right;
+    cursor: pointer;
+  }
+  header .burger img {
+    width: 100%;
+  }
+  header .burger:hover {
+    transition: 0.3s;
+    transform: rotate(270deg);
+  }
+  header .dark {
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(160, 160, 160, 0.8);
+    opacity: 0;
+  }
+  header .sidemenu {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    right: -300px;
+    top: 0;
+    border-left: 5px solid black;
+    background-color: white;
+    transition: 0.5s;
+  }
+  header .sidemenu .cls {
+    display: block;
+    padding: 5px 25px;
+    border: 1px solid;
+    font-size: 15px;
+    margin: 30px auto 0 auto;
+  }
+  header .sidemenu .cls:hover {
+    color: white;
+    background-color: #9E0000;
+    cursor: pointer;
+  }
+  header .sidemenu nav {
+    display: block;
+    padding: 45px 40px 45px 40px;
+    overflow-y: auto;
+  }
+  header .sidemenu li {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  header .sidemenu li a {
+    margin: 0;
+  }
+  header .sidemenu .in {
+    display: block;
+    text-align: center;
+    border-bottom: 3px dotted black;
+    font-size: 30px;
+  }
+  header .sidemenu .log {
+    display: block;
+    margin: 25px auto;
+  }
+  header .sidemenu .bot {
+    display: block;
+    border-top: 5px solid black;
+    margin-top: auto;
+  }
+  header .sidemenu .bot .social {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+  }
+  header .sidemenu .bot a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/social-sprite.png");
+    background-size: auto 100px;
+  }
+  header .sidemenu .bot a:nth-child(1) {
+    background-position: 0 top;
+  }
+  header .sidemenu .bot a:nth-child(1):hover {
+    background-position: 0 bottom;
+  }
+  header .sidemenu .bot a:nth-child(2) {
+    background-position: 52px top;
+  }
+  header .sidemenu .bot a:nth-child(2):hover {
+    background-position: 52px bottom;
+  }
+  header .sidemenu .bot a:nth-child(3) {
+    background-position: 153px top;
+  }
+  header .sidemenu .bot a:nth-child(3):hover {
+    background-position: 153px bottom;
+  }
+  header .sidemenu .bot p {
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 20px;
+  }
+
+  #click:checked + .dark + .sidemenu {
+    transition: 0.5s;
+    transform: translateX(-100%);
+  }
+
+  #click:checked + .dark {
+    display: block;
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  .content aside {
+    border: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content {
+    display: block;
+  }
+  .content aside {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    position: static;
+    border: 1px solid;
+  }
+
+  aside div {
+    text-align: center;
+    position: static;
+  }
+
+  aside div a {
+    display: inline;
+    padding-right: 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .navbutt div span {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

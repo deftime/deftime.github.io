@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+/* HEADER */
+@import "./main/header";
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+aside {
+  border: 1px solid;
+  width: 28%;
+  height: 1029px;
+  position: relative;
+  div {
+    margin: 10px auto;
+    position: sticky;
+    top: 10px;
+    a {
+      display: block;
+      color: black;
+      text-decoration: none;
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 10px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.main {
+  border: 1px solid;
+  padding: 5px;
+  h1 {
+    text-align: center;
+    margin: 5px 0 20px 0;
+  }
+  h2 {
+    text-align: center;
+    margin: 5px 0 20px 0;
+  }
+  .video {
+    /* border: 1px solid; */
+    height: 25em;
+    /* background: url('./video/poster.png') no-repeat; */
+    video {
+      width: 100%;
+      height: 100%
+    }
+  }
+}
+
+.blocks {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .inner {
+    position: relative;
+    z-index: 5;
+    width: 300px;
+    height: 400px;
+    margin: 15px 20px;
+    border: 1px solid;
+    img {
+      width: 100%;
+    }
+    .b-img {
+      height: 40%;
+      overflow: hidden;
+    }
+    h3 {
+      font-size: 25px;
+      text-align: center;
+      padding: 15px 0;
+      border-bottom: 1px solid;
+    }
+    p {
+      text-align: justify;
+      font-family: sans-serif;
+      font-style: italic;
+      margin: 5px;
+    }
+  }
+}
+
+.navbutt {
+  display: flex;
+  justify-content: space-between;
+  div {
+    width: 200px;
+    padding: 5px;
+    font: {
+      size: 30px;
+      weight: bold;
+    }
+    border: 1px solid black;
+    margin: 5px 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  img {
+    width: 40px;
+    margin: 0 15px;
+  }
+}
+
+
+/* FOOTER */
+@import "./main/footer";
+
+/* HOVERS and ANIMATIONS */
+@import "./main/hovers";
+
+/* ADAPTIVE and RESPONSIBLE */
+@import "./main/media";

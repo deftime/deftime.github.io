@@ -11,14 +11,6 @@ body {
 }
 
 .outer {
-<<<<<<< HEAD
-  width: 400px;
-  height: 400px;
-  padding: 200px;
-}
-
-.inside {
-=======
   width: 30vw;
   height: 30vw;
   border: 1px solid;
@@ -27,7 +19,6 @@ body {
 }
 
 /* .inside {
->>>>>>> labs
   position: relative;
   width: 100%;
 }
@@ -47,8 +38,4 @@ body {
   right: 0;
   overflow: hidden;
   text-overflow: ellipsis;
-<<<<<<< HEAD
-}
-=======
 } */
->>>>>>> labs
