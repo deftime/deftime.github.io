@@ -1,7 +1,13 @@
+@import "./vars/fonts";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .conteiner {
@@ -47,10 +53,14 @@ aside {
   border: 1px solid;
   padding: 5px;
   h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 45px;
     text-align: center;
     margin: 5px 0 20px 0;
   }
   h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
     text-align: center;
     margin: 5px 0 20px 0;
   }

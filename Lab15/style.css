@@ -11,12 +11,6 @@ body {
 }
 
 .outer {
-  width: 400px;
-  height: 400px;
-  padding: 200px;
-}
-
-.inside {
   width: 30vw;
   height: 30vw;
   border: 1px solid;

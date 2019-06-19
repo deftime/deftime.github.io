@@ -1,7 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap&subset=cyrillic");
+@font-face {
+  font-family: Teko;
+  src: url("../fonts/Teko-Regular.ttf");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 .conteiner {
@@ -105,10 +114,14 @@ aside div a:hover {
   padding: 5px;
 }
 .main h1 {
+  font-family: "Teko", sans-serif;
+  font-size: 45px;
   text-align: center;
   margin: 5px 0 20px 0;
 }
 .main h2 {
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
   text-align: center;
   margin: 5px 0 20px 0;
 }
