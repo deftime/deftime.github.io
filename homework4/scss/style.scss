@@ -1,0 +1,86 @@
+@import "./parts/keyframes";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.road {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 30vh;
+  width: 50%;
+  overflow: hidden;
+}
+
+.bodypart {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: green;
+  &::before {
+    content: "\2013";
+    transform: rotate(-50deg);
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  &::after {
+    content: "\2013";
+    transform: rotate(50deg);
+    display: inline-block;
+  }
+}
+
+.head {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.eye {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 10px 0 0 20px;
+  background-color: #99CCFF;
+  .pup {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #990000;
+    border-radius: 50%;
+    margin: 15px 0 0 20px;
+    background-color: #990000;
+  }
+
+}
+
+.last {
+  animation: last 15s infinite;
+}
+
+.firstmid {
+  animation: firstmid 15s infinite;
+}
+
+.mid {
+  animation: mid 15s infinite;
+}
+
+.lastmid {
+  animation: lastmid 15s infinite;
+}
+
+.front {
+  animation: front 15s 0.5s infinite;
+}
