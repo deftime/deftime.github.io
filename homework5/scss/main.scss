@@ -1,0 +1,75 @@
+@import "./parts/keyframes";
+@import "./parts/templates";
+
+body {
+  @extend %flex-center;
+  height: 100vh;
+}
+
+.box {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  background: {
+    image: url('../images/tree.png');
+    repeat: no-repeat;
+    position: center;
+  }
+  .ball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .pos1 {
+    left: 200px;
+    top: 70px;
+  }
+  .pos2 {
+    left: 125px;
+    top: 140px;
+  }
+  .pos3 {
+    left: 275px;
+    top: 140px;
+  }
+  .pos4 {
+    left: 70px;
+    top: 260px;
+  }
+  .pos5 {
+    left: 200px;
+    top: 210px;
+  }
+  .pos6 {
+    left: 325px;
+    top: 260px;
+  }
+  .pos7 {
+    left: 200px;
+    top: 330px;
+  }
+}
+
+.light1 {
+  transition: 0s;
+  animation: light1 5s infinite;
+}
+
+.light2 {
+  animation: light2 5s 1s infinite;
+}
+
+.light4 {
+  animation: light4 5s 2s infinite;
+}
+
+.light3 {
+  animation: light3 5s 3s infinite;
+}
+
+.light5 {
+  animation: light5 5s 4s infinite;
+}
