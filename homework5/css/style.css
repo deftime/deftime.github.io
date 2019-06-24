@@ -1,0 +1,252 @@
+@keyframes light1 {
+  0% {
+    background-color: white;
+  }
+  10% {
+    background-color: red;
+  }
+  20% {
+    background-color: red;
+  }
+  30% {
+    background-color: white;
+  }
+  40% {
+    background-color: blue;
+  }
+  50% {
+    background-color: blue;
+  }
+  60% {
+    background-color: white;
+  }
+  70% {
+    background-color: yellow;
+  }
+  80% {
+    background-color: yellow;
+  }
+  90% {
+    background-color: white;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes light2 {
+  0% {
+    background-color: white;
+  }
+  10% {
+    background-color: blue;
+  }
+  20% {
+    background-color: blue;
+  }
+  30% {
+    background-color: white;
+  }
+  40% {
+    background-color: red;
+  }
+  50% {
+    background-color: red;
+  }
+  60% {
+    background-color: white;
+  }
+  70% {
+    background-color: yellow;
+  }
+  80% {
+    background-color: yellow;
+  }
+  90% {
+    background-color: white;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes light3 {
+  0% {
+    background-color: white;
+  }
+  10% {
+    background-color: yellow;
+  }
+  20% {
+    background-color: yellow;
+  }
+  30% {
+    background-color: white;
+  }
+  40% {
+    background-color: red;
+  }
+  50% {
+    background-color: red;
+  }
+  60% {
+    background-color: white;
+  }
+  70% {
+    background-color: blue;
+  }
+  80% {
+    background-color: blue;
+  }
+  90% {
+    background-color: white;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes light4 {
+  0% {
+    background-color: white;
+  }
+  10% {
+    background-color: blue;
+  }
+  20% {
+    background-color: blue;
+  }
+  30% {
+    background-color: white;
+  }
+  40% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: yellow;
+  }
+  60% {
+    background-color: white;
+  }
+  70% {
+    background-color: red;
+  }
+  80% {
+    background-color: red;
+  }
+  90% {
+    background-color: white;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes light5 {
+  0% {
+    background-color: white;
+  }
+  10% {
+    background-color: red;
+  }
+  20% {
+    background-color: red;
+  }
+  30% {
+    background-color: white;
+  }
+  40% {
+    background-color: blue;
+  }
+  50% {
+    background-color: blue;
+  }
+  60% {
+    background-color: white;
+  }
+  70% {
+    background-color: yellow;
+  }
+  80% {
+    background-color: yellow;
+  }
+  90% {
+    background-color: white;
+  }
+  100% {
+    background-color: white;
+  }
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+}
+
+.box {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  background-image: url("../images/tree.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box .ball {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-color: white;
+}
+.box .pos1 {
+  left: 200px;
+  top: 70px;
+}
+.box .pos2 {
+  left: 125px;
+  top: 140px;
+}
+.box .pos3 {
+  left: 275px;
+  top: 140px;
+}
+.box .pos4 {
+  left: 70px;
+  top: 260px;
+}
+.box .pos5 {
+  left: 200px;
+  top: 210px;
+}
+.box .pos6 {
+  left: 325px;
+  top: 260px;
+}
+.box .pos7 {
+  left: 200px;
+  top: 330px;
+}
+
+.light1 {
+  transition: 0s;
+  animation: light1 5s infinite;
+}
+
+.light2 {
+  animation: light2 5s 1s infinite;
+}
+
+.light4 {
+  animation: light4 5s 2s infinite;
+}
+
+.light3 {
+  animation: light3 5s 3s infinite;
+}
+
+.light5 {
+  animation: light5 5s 4s infinite;
+}
+
+/*# sourceMappingURL=style.css.map */
