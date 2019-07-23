@@ -42,13 +42,16 @@ var pg = document.getElementById('block');
 // -------------------------------------------------
 
 function fib(a) {
-  var count = 0;
-  while (a < 1) {
-    count *= fib(a - 1);
+  var count = a;
+  while (a > 1) {
+    count = a * fib(a - 1);
+    return count;
   }
   return count;
 }
 
-var rez = fib(5);
+var first = +prompt('Enter number: ', '');
 
-pg.innerHTML = rez;
+var rez = fib(first);
+
+pg.innerHTML = `Factorial is ${rez}`;
