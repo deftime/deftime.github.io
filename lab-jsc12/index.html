@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    div {
+      width: 250px;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    button {
+      border: none;
+      padding: 10px;
+      margin: 5px 0;
+      font-size: 15px;
+      background-color: green;
+      color: #fff;
+    }
+    button:active {
+      transition: 0.3s;
+      transform: scale(0.9);
+    }
+    .block {
+      width: 220px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body id="body">
+
+<div id="block">
+  <form action="#" method="post">
+    <label>Name:</label>
+    <input id="in" type="text" name="name" value=""><br>
+    <label>Surname:</label>
+    <input type="text" name="surname" value=""><br>
+    <label>Check it!</label>
+    <input type="checkbox" name="check" value=""><br>
+    <select  id="select" name="select">
+      <option value="app">Apple</option>
+      <option value="pine" selected>Pineapple</option>
+      <option value="orng">Orange</option>
+    </select>
+  </form>
+  <div class="block" id="show">
+
+  </div
+
+</div>
+
+</body>
+</html>
