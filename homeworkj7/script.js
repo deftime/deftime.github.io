@@ -52,3 +52,29 @@
 // }
 
 // ----------------------------------------------
+
+// var tar = document.querySelector('span');
+//
+// tar.addEventListener('click', showHide);
+//
+// function showHide() {
+//   if (this.nextElementSibling.hidden == true) {
+//     this.nextElementSibling.hidden = false;
+//   } else {
+//     this.nextElementSibling.hidden = true;
+//   }
+//
+// }
+
+// ----------------------------------------------------
+
+var blocks = document.querySelectorAll('.cross');
+
+for (let key of blocks) {
+  key.addEventListener('click', hide);
+}
+
+
+function hide(event) {
+  event.target.parentElement.classList.add('close');
+}
