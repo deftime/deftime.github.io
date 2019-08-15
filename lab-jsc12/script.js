@@ -11,6 +11,6 @@ ch.checked = true;
 
 var sel = document.getElementById('select');
 
-document.getElementById('show').innerHTML = `Index: ${sel.selectedIndex}<br> Attribute: ${sel.value}<br>Value: ${sel.innerText}`;
+document.getElementById('show').innerHTML = `Index: ${sel.selectedIndex}<br> Attribute: ${sel.value}<br>Value: ${sel.options[1].innerText}`;
 
 document.getElementById('in').addEventListener('change', () => alert('Lost focus!'));

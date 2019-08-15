@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    div {
+      width: 250px;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    textarea {
+      width: 250px;
+      height: 25px;
+      padding: 5px;
+      border: 3px solid black;
+    }
+    .block {
+      text-align: left;
+    }
+    .open {
+      border: none;
+      background-color: green;
+      color: white;
+      padding: 10px;
+    }
+    .window {
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px 10px black;
+    }
+    .window form {
+      text-align: center;
+    }
+    .darkWrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(128, 128, 128, 0.7);
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+    }
+  </style>
+</head>
+<body id="body">
+
+<!-- <div id="block">
+  <form name="myForm" action="#" method="post">
+    <select name="sel">
+      <option value="fir">First</option>
+      <option value="sec">Second</option>
+    </select>
+  </form><br>
+  <span></span>
+</div> -->
+
+<!-- <div id="block" tabindex="1"></div>
+<textarea id="text" hidden></textarea> -->
+
+<!-- <div class="block">
+  <button class="open">Open window</button>
+</div>
+
+<div class="darkWrapper">
+  <div class="window">
+    <form name="myForm">
+      <span>Enter something:</span>
+      <br><br>
+      <input type="text" name="line" value=""><br>
+      <br>
+      <button type="submit" name="ok">OK</button>
+      <button type="button" name="cancel">Cancel</button>
+    </form>
+  </div>
+</div> -->
+
+<div class="block">
+  <form name="calc">
+    <label>Start:</label>
+    <input type="number" name="start" value="1000"><br>
+    <label>Term: </label>
+    <select name="term">
+      <option value="1">1 year</option>
+      <option value="2">2 year</option>
+      <option value="5" selected>5 year</option>
+      <option value="10">10 year</option>
+      <option value="25">25 year</option>
+    </select><br>
+    <label>Percents:</label>
+    <input type="number" name="perc" value="5">
+  </form>
+  <hr>
+  <span>Input: </span><span id="input"></span><br>
+  <span>Output: </span><span id="output"></span>  
+</div>
+
+
+
+</body>
+</html>

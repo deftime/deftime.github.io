@@ -68,13 +68,32 @@
 
 // ----------------------------------------------------
 
-var blocks = document.querySelectorAll('.cross');
+// var blocks = document.querySelectorAll('.cross');
+//
+// for (let key of blocks) {
+//   key.addEventListener('click', hide);
+// }
+//
+//
+// function hide(event) {
+//   event.target.parentElement.classList.add('close');
+// }
 
-for (let key of blocks) {
-  key.addEventListener('click', hide);
-}
+// -----------------------------------------------------
 
 
-function hide(event) {
-  event.target.parentElement.classList.add('close');
+var blc = document.querySelector('.block');
+
+blc.addEventListener('click', askGo);
+
+function askGo(event) {
+  event.preventDefault();
+  if (event.target.nodeName == 'A') {
+    let go = confirm(`Go to link - ${event.target.getAttribute('href')}?`);
+    if (go === true) {
+      window.open(event.target.getAttribute('href'));
+    } else {
+      return false;
+    }
+  }
 }
