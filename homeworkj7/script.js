@@ -18,38 +18,40 @@
 
 // -----------------------------------------
 
-// var field = document.getElementById('field');
-// var ball = document.getElementById('ball');
-//
-// field.addEventListener('click', getCord);
-//
-// function getCord(event) {
-//   document.body.lastElementChild.innerHTML = `X: ${event.clientX} - Y: ${event.clientY}`;
-//   let x;
-//   let y;
-//
-//   if (event.clientX <= 800) {
-//     x = 0;
-//   } else {
-//     x = event.clientX - 800 - 20;
-//   }
-//
-//   if (event.clientX >= 1100) {
-//     x = 260;
-//   }
-//
-//   if (event.clientY <= 320) {
-//     y = 0;
-//   } else {
-//     y = event.clientY - 320 - 20;
-//   }
-//
-//   if (event.clientY >= 620) {
-//     y = 260;
-//   }
-//
-//   ball.setAttribute("style", `left: ${x}px; top: ${y}px;`);
-// }
+var field = document.getElementById('field');
+var ball = document.getElementById('ball');
+
+field.addEventListener('click', getCord);
+
+function getCord(event) {
+  document.body.lastElementChild.innerHTML = `X: ${event.clientX} - Y: ${event.clientY}`;
+  let x;
+  let y;
+  let borRight = field.offsetLeft + field.clientWidth;
+  let borBot = field.offsetTop + field.clientHeight;
+
+  if (event.clientX <= field.offsetLeft + 20) {
+    x = 0;
+  } else {
+    x = event.clientX - field.offsetLeft - 30;
+  }
+
+  if (event.clientX >= borRight) {
+    x = 260;
+  }
+
+  if (event.clientY <= field.offsetTop + 20) {
+    y = 0;
+  } else {
+    y = event.clientY - field.offsetTop - 30;
+  }
+
+  if (event.clientY >= borBot) {
+    y = 260;
+  }
+
+  ball.setAttribute("style", `left: ${x}px; top: ${y}px;`);
+}
 
 // ----------------------------------------------
 
@@ -82,18 +84,18 @@
 // -----------------------------------------------------
 
 
-var blc = document.querySelector('.block');
-
-blc.addEventListener('click', askGo);
-
-function askGo(event) {
-  event.preventDefault();
-  if (event.target.nodeName == 'A') {
-    let go = confirm(`Go to link - ${event.target.getAttribute('href')}?`);
-    if (go === true) {
-      window.open(event.target.getAttribute('href'));
-    } else {
-      return false;
-    }
-  }
-}
+// var blc = document.querySelector('.block');
+//
+// blc.addEventListener('click', askGo);
+//
+// function askGo(event) {
+//   event.preventDefault();
+//   if (event.target.nodeName == 'A') {
+//     let go = confirm(`Go to link - ${event.target.getAttribute('href')}?`);
+//     if (go === true) {
+//       window.open(event.target.getAttribute('href'));
+//     } else {
+//       return false;
+//     }
+//   }
+// }
