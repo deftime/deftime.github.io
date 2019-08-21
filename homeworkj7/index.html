@@ -11,12 +11,14 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      overflow: hidden;
     }
     .block {
-      width: 550px;
-      border: 1px solid black;
-      padding: 10px;
-      margin-top: 5px;
+      position: relative;
+      width: 850px;
+      height: 550px;
+      border: 3px solid black;
+      overflow: hidden;
     }
     #field {
       padding: 0;
@@ -53,6 +55,44 @@
     .close {
       display: none;
     }
+
+    .block ul {
+      margin: 0;
+      padding: 0;
+      width: 9999px;
+      height: 550px;
+      transition: 1s;
+    }
+    .block li {
+      display: inline-block;
+      list-style: none;
+      width: 850px;
+      height: 550px;
+      overflow: hidden;
+    }
+
+    .block img {
+      display: block;
+    }
+
+    .right, .left {
+      position: absolute;
+      font-size: 50px;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .left {
+      left: 10px;
+      top: 50%;
+    }
+
+    .right {
+      right: 10px;
+      top: 50%;
+    }
+
   </style>
 </head>
 <body id="body">
@@ -63,10 +103,10 @@
 
 </div> -->
 
-<div id="field">
+<!-- <div id="field">
   <img src="ball.svg" alt="ball" id="ball">
 </div>
-<span></span>
+<span></span> -->
 
 <!-- <div class="block">
   <span style="cursor: pointer;">Main Sub-menu</span>
@@ -95,6 +135,19 @@
 <!-- <div class="block">
   Lorem ipsum dolor sit amet, <a href="https://google.com" target="_blank">consectetur</a> adipisicing elit, sed do <a href="https://google.com" target="_blank">eiusmod</a> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <a href="https://google.com" target="_blank">minim</a> veniam.
 </div> -->
+
+
+<div class="block">
+  <ul id="move">
+    <li><img src="flower.jpg" alt="flower"></li><li>
+    <img src="ferrari.jpg" alt="ferrari"></li><li>
+    <img src="heaven.jpg" alt="heaven"></li><li>
+    <img src="lake.jpg" alt="lake"></li>
+  </ul>
+  <div class="right">></div>
+  <div class="left"><</div>
+</div>
+
 
 </body>
 </html>
