@@ -102,31 +102,55 @@
 
 // ---------------------------------------------
 
-var rightBut = document.querySelector('.right');
-var leftBut = document.querySelector('.left');
-var inner = document.querySelector('#move');
-var outer = document.querySelector('.block');
+// var rightBut = document.querySelector('.right');
+// var leftBut = document.querySelector('.left');
+// var inner = document.querySelector('#move');
+// var outer = document.querySelector('.block');
+//
+// rightBut.addEventListener('click', moveSlide);
+// leftBut.addEventListener('click', moveSlide);
+//
+// let mover = 0;
+// function moveSlide(event) {
+//   let slideLen = 0;
+//   let allSlides = inner.children;
+//   for (let key of allSlides) {
+//     slideLen += key.scrollWidth;
+//   }
+//   if (this.classList.contains('right')) {
+//     if (mover < (slideLen - outer.clientWidth*2)) {
+//       mover += outer.clientWidth;
+//     }
+//     inner.style.transform = `translateX(-${mover}px)`;
+//   } else if (this.classList.contains('left')) {
+//     if (mover > 0) {
+//       mover -= outer.clientWidth;
+//     }
+//     inner.style.transform = `translateX(-${mover}px)`;
+//   }
+//   return;
+// }
 
-rightBut.addEventListener('click', moveSlide);
-leftBut.addEventListener('click', moveSlide);
+// ------------------------------------------------
 
-let mover = 0;
-function moveSlide(event) {
-  let slideLen = 0;
-  let allSlides = inner.children;
-  for (let key of allSlides) {
-    slideLen += key.scrollWidth;
-  }
-  if (this.classList.contains('right')) {
-    if (mover < (slideLen - outer.clientWidth*2)) {
-      mover += outer.clientWidth;
-    }
-    inner.style.transform = `translateX(-${mover}px)`;
-  } else if (this.classList.contains('left')) {
-    if (mover > 0) {
-      mover -= outer.clientWidth;
-    }
-    inner.style.transform = `translateX(-${mover}px)`;
-  }
-  return;
-}
+// document.querySelector('.block').addEventListener('click', closeWin);
+//
+// function closeWin(event) {
+//   if (!event.target.classList.contains('cross')) {
+//     return;
+//   }
+//   event.target.parentElement.hidden = true;
+// }
+
+// --------------------------------------------------
+
+// document.querySelector('#mainUl').addEventListener('click', opener);
+//
+// function opener(event) {
+//   if (event.target.nodeName != 'LI') {
+//     return;
+//   }
+//   event.target.children[0].hidden = !event.target.children[0].hidden;
+// }
+
+// -------------------------------------------------
