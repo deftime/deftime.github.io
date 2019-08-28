@@ -154,3 +154,39 @@
 // }
 
 // -------------------------------------------------
+
+var butts = document.querySelectorAll('button');
+
+document.addEventListener('mouseover', onButt);
+document.addEventListener('mouseout', offButt);
+
+function onButt(event) {
+  if (!event.target.dataset.tooltip) {
+    return;
+  }
+  let tip = event.target.dataset.tooltip;
+
+
+  let posTop = event.target.getBoundingClientRect().top;
+  console.log(posTop);
+  let posLeft = event.target.getBoundingClientRect().left;
+  let tool = document.createElement('div');
+  tool.innerHTML = tip;
+  tool.classList.add('tooltip');
+  if (posTop < 25) {
+    tool.style.top = (posTop + 5 + event.target.offsetHeight) + 'px';
+  } else {
+    tool.style.top = (posTop - 5 - event.target.offsetHeight) + 'px';
+  }
+  tool.style.left = posLeft + 'px';
+  document.body.append(tool);
+}
+
+function offButt(event) {
+  if (!event.target.dataset.tooltip) {
+    return;
+  }
+  if (document.querySelector('.tooltip')) {
+    document.querySelector('.tooltip').remove();
+  }
+}
