@@ -6,30 +6,33 @@ butt.addEventListener('click', reqFun);
 
 function reqFun() {
   var xhr = new XMLHttpRequest();
-  let url = 'https://jsonplaceholder.typicode.com/todos';
+  let url = 'https://jsonplaceholder.typicode.com';
   // let url = 'https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022__340.jpg';
   xhr.open('GET', url);
 
-  xhr.send();
-
   let resp;
 
-  xhr.onload = function() {
-    // rez.innerHTML = '';
+  if (localStorage.getItem('ourData')) {
+    resp = JSON.parse(localStorage.getItem('ourData'));
+    buildPage(resp);
+  } else {
     try {
-      resp = JSON.parse(xhr.response);
-      if (typeof(resp) != 'object') {
-        throw new Error('Fatal error!')
+      xhr.send();
+      xhr.onload = function() {
+        localStorage.setItem('ourData', xhr.response);
+        resp = JSON.parse(xhr.response);
+        buildPage(resp);
       }
     } catch (e) {
-      alert(e.name + ': ' + e.massage);
+      alert(e.name);
     }
+  }
 
-
-    for (let i = 0; i < resp.length; i++) {
+  function buildPage(massObj) {
+    for (let i = 0; i < massObj.length; i++) {
       (function(j) {
         setTimeout(function() {
-          let {id, title, completed: checkBox} = resp[j];
+          let {id, title, completed: checkBox} = massObj[j];
           let cont = document.createElement('div');
           cont.classList.add('cont');
           let fLine = document.createElement('div');
@@ -56,21 +59,7 @@ function reqFun() {
           document.body.append(cont);
         }, 1000*i);
       })(i);
-
-
     }
-
-
-
-    // rez.append(fLine);
-    // rez.append(sLine);
-    //
-    // if (resp.completed == false) {
-    //   rez.style.borderColor = 'red';
-    // } else {
-    //   rez.style.borderColor = 'green';
-    // }
   }
-
 
 }
