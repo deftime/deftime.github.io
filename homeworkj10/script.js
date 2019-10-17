@@ -19,7 +19,11 @@ function wordStat(str) {
         count++;
       }
     }
-    rezObj[arrStr[i]] = count;
+    if (arrStr[i] == ' ') {
+      rezObj.Space = count;
+    } else {
+      rezObj[arrStr[i]] = count;
+    }
   }
   return rezObj;
 }
