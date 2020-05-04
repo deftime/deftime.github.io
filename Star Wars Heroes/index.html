@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <title>Star Wars Heroes</title>  
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+
+<section class="wrapper">
+  <div class="inner-bg"></div>
+  <header>
+    <div class="logo">
+      <img src="./images/sw_logo.png" alt="sw_logo">
+      <img src="./images/sw_heroes.png" alt="sw_heroes">
+    </div>
+  </header>
+  <div class="main">
+    <div class="back-butt" style="display: none;"> < Back to list</div>
+    <div class="list-wrap"></div>
+    <div class="hero-wrap" style="display: none;">
+      <div class="row_char">
+        <div class="photo"></div>
+        <div class="char_info">
+          <span class="tag">Name: </span><span id="name"></span><br>
+          <span class="tag">Race: </span><span id="race"></span><br>
+          <span class="tag">Gender: </span><span id="gender"></span><br>
+          <span class="tag">Height: </span><span id="height"></span><br>
+          <span class="tag">Mass: </span><span id="mass"></span><br>
+          <span class="tag">Native planet: </span><span id="planet"></span><br>
+        </div>
+      </div>
+      <div class="row_info">
+        <div class="films">
+          <span>Films</span>
+          <hr>
+          <ul id="films_list"></ul>
+        </div>
+        <div class="ships">
+          <span>Starships</span>
+          <hr>
+          <ul id="ships_list"></ul>
+        </div>
+        <div class="transport">
+          <span>Transport</span>
+          <hr>
+          <ul id="transport_list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pagination">
+    <span style="font-weight: bold; text-decoration: underline;">1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+  </div>
+  <footer><span>&copy Star Wars Heroes by Default. GitHub.</span></footer>
+</section>
+
+</body>
+</html>
